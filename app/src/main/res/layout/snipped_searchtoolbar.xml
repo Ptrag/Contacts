@@ -1,0 +1,42 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/searchContactsToolbar">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/toll_search_bar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:id="@+id/contactsToolbarSearchEditText"
+                    android:hint="@string/search_hint"
+                    android:layout_toEndOf="@+id/contactsToolbarBackArrowIcon"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/contactsToolbarBackArrowIcon"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_back_arrow_lightblue"
+                    android:layout_centerVertical="true"/>
+                
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

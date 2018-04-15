@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="contacts">Contacts</string>
+    <string name="no_contacts_created">No contacts created</string>
+    <string name="search_hint">Enter person name here</string>
+    <string name="remove">remove</string>
+</resources>

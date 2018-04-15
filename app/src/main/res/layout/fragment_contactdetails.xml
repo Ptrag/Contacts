@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstLayout">
+            <include layout="@layout/snipped_contactsdetailstoolbar"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/secondLayout"
+            android:layout_below="@id/firstLayout">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/contactDetailImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:civ_border_width="1dp"
+                android:src="@drawable/ic_android"
+                app:civ_border_color="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactDetailName"
+                android:textSize="25sp"
+                android:text="name name"
+                android:layout_below="@id/contactDetailImage"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/contactDetailName"
+                android:id="@+id/contactDetailsData"></ListView>
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
